@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molestar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Cargar sonido de campana -->
+    <audio id="bell-sound" src="./assets/audio/timbre.wav" preload="auto"></audio>
+
+    <!-- Crear notificación -->
+    <div class="container">
+        <div class="notification" id="_notification">
+        </div>
+        <button class="button" id="_button"> Molestar </button>
+    </div>
+
+    <!-- Imágenes ocultas inicialmente --> 
+    <img id="image1" class="image1" src="./assets/img/crazy-cat-insane-cat.gif" style="display: none;" /> 
+    <video id="image2" class="image2" src="./assets/video/m2-res_720p.mp4" style="display: none;" muted autoplay loop controls></video>
+
+    <script src="script.js"></script>
+</body>
+</html>
